@@ -1,0 +1,79 @@
+{
+  "main": "Bosh Sahifa",
+  "redaction": "Tahririyat hay’ati",
+  "conditions": "Shartlar",
+  "archive": "Arxiv",
+  "about": "Biz haqimizda",
+
+  "blog": "Blog",
+  "price": "To'lov shartlari",
+  "contacts": "Kontaktlar",
+
+  "book": "Jurnal o'qituvchi, magistrant, tadqiqotchi, oliy va professional ta’lim talabalari, hamda barcha ilmiy faoliyat uyrituvchi sub’yeкtlarga ilmiy maqolalarini nashr etish imkoniyatini beradi. Pedagogika, psixologiya va san'atshunoslik kabi turli sohalardagi asosiy ilmiy tadqiqot natijalarini o'z ichiga olgan maqolalarni chop ettirish tavsiya etiladi. Shuningdek, ushbu yo‘nalishlar bo‘yicha falsafa doktori (PhD) va fan doktori (DSc) ilmiy darajalariga nomzodlarning dissertatsiyalari asosidagi maqolalar mamnuniyat bilan qabul qilinadi. Bizning jurnalimiz ilmiy tadqiqotlar almashinuvi uchun platformani taklif etadi va zamonaviy ilm-fan sohasida akademik faoliyatni rag'batlantiradi.",
+  "book-two": "Jurnalimiz ochiqlik va ilmiy nashrlardan erkin foydalanish tamoyillariga amal qiladi. Shuningdek, biz tadqiqot etikasini qo'llab-quvvatlaymiz. Har bir maqola nashr etilishidan oldin taqrizchilarimiz tomonidan sinchkovlik bilan batafsil tahlil qilinadi.",
+
+  "main-red": "Bosh redaktor:",
+  "name-red": "Yadgarov Nodir Djalolovich, pedagogika fanlari doktori,professor,",
+  "main-preds": "Jamoatchilik kengashi raisi:",
+  "name-preds": "Mamurov Bahodir Baxshulloyevich, pedagogika fanlari doktori,professor. Buxoro davlat pedagogika instituti rektori",
+  "tahrir-hayati": "Tahrir Hay'ati:",
+  "tahrir-secondnames": "Dr.Ihsan Taktash, professor, Yildirim Boyazit nomidagi Anqara universiteti, Turkiya. Tadjixodjayev Zokirxoʻja Abdusattorovich, texnika fanlari doktori, professor. Танирбергенов Медеубек Жуматаевич, pedagogika fanlari doktori, professor, Qozog‘iston Pedagogika fanlari Akademiyasining akademigi, M. Auyezov Janubiy Qozog‘iston Universiteti.Baydabekov Auez Kenesbekovich, texnika fanlari doktori, professor, L.N. Gumilyov nomidagi Yevroosiyo milliy universiteti, Qozog'iston. Черникова Светлана Михайловна, pedagogika fanlari doktori, professor. И.С.Тургеньев номли Орел давлат университети. Saidova Mohinur Jonpo‘latovna, pedagogika fanlari doktori (Dsc), professor. Buxoro davlat pedagogika instituti. Qahhorov Siddiq Qahhorovich, pedagogika fanlari doktori, professor.Jo’rayev Husniddin Oltinboyevich, pedagogika fanlari doktori, professor, Buxoro davlat universiyeti, O‘zbekiston. Buxoro davlat universiyetiOlimov Shirinboy Sharofovich, pedagogika fanlari doktori, professor. Buxoro davlat universiyeti.Ochilov Farxod Egamberdiyevich, pedagogika fanlari nomzodi, dotsent. Qarshi davlat universiyeti.Mamatov Dilshod Qodirovich, pedagogika fanlari bo‘yicha a falsafa doktori (PhD), professor, Buxoro davlat universiteti.Shovdirov Sunnat Aslanovich, pedagogika fanlari bo‘yicha falsafa doktori (PhD), dotsent. Navoiy davlat pedagogika instituti. Umarova Sitora Muxlisovna pedagogika fanlari bo‘yicha falsafa doktori (PhD). Buxoro davlat pedagogika instituti.Ergashov Mansur Yarashovich Buxoro davlat pedagogika instituti professori. Ergashov Mansur Yarashovich is a professor of Bukhara State Pedagogical Institute.Sayfullayeva Dilafro‘z Axmadovna pedagogika fanlari bo‘yicha falsafa doktori (PhD). Buxoro davlat pedagogika instituti.",
+  "masul-kotib": "Mas’ul kotib:",
+  "masul-name": "Mamurova Dilfuza Islomovna, pedagogika fanlari bo‘yicha falsafa doktori (PhD), dotsent.",
+  "masul-ped": "Buxoro davlat pedagogika instituti.",
+
+  "info-journal": "JURNALNING AXBOROT XATI",
+  "journal-text": "Jurnalga quyidagi yoʻnalishlar boʻyicha maqolalar qabul qiladi: Pedagogika, psixolgiya, san’atshunoslik fanlari bo‘yicha falsafa doktori (PhD) va fan doktori (DSc) ilmiy darajasiga talabgorlarning dissertatsiya ishlari yuzasidan asosiy ilmiy natijalarni o‘z ichiga oladi. Ilmiy jamoatchilikni ilm-fan natijalari bilan tanishtirish; ilm-fan rivojlantirishning dolzarb masalalariga tadqiqotlarining ustuvor yo‘nalishlari doirasida olib borilgan ilmiy ishlarning asosiy natijalari to‘g‘risida yosh olimlarning tadqiqotlari va ularning ilmiy ish natijalari to‘g‘risida ma’lumot berish; yangi istiqbolli loyihalar va texnologiyalarni joriy etish; ta’lim va tarbiya bilan bog‘liq barcha fanlar bo‘yicha nazariy va amaliy ishlar, fan va ta’limning innovatsion rivojlanishini, fundamental va amaliy tadqiqotlarni qo‘llab-quvvatlash uchun qulay axborot muhitini yaratish. Shuningdek zamonaviy ta’lim muammo va poradigmalarini o‘rganish, rivojlantirish va amaliyotga tadbiq etish bo‘yicha nazariy tavsiyalar berishdan iborat. Nashr qilingan materiallar mualliflari O‘zbekiston Respublikasi hamda yaqin va uzoq xorijning yetakchi olimlari, tadqiqotchi izlanuvchilar.",
+
+  "rules-doc": "Taqdim etiladigan maqolalarga qoʻyiladigan talablar:",
+  "imrad": "• maqola xalqaro talab darajasidagi Imrad shaklida yozilgan boʻlishi lozim;",
+  "doc-lang": "• maqola nomi, annotatsiya va kalit soʻzlar, oʻzbek, russ ва ingliz tilida boʻlishi lozim;",
+  "doc-themes": "• maqolalar ilmiy jurnal yoʻnalishiga oid dolzarb mavzularda, ilmiy va tugallangan fikrlarga asoslangan, taklif va tavsiyalar bilan taqdim etilishi lozim;",
+  "doc-format": "• maqola matnlari A4 hajmda, yuqoridan va pastdan 2,25 sm, chapdan 2.25 sm, oʻngdan 2.25 sm xoshiyaga ega boʻlishi kerak;",
+  "doc-style": "• maqola matni WORD matn muharririda, Arial Narrow shrifti, 12 oʻlchamida, 1 intervalda boʻlishi va 12-14 bet hajmda boʻlishi, mualliflar soni 4 nafardan oshmasligi lozim;",
+  "doc-check": "• yuborilgan ilmiy maqolalar tahrir hay’ati tomonidan koʻrib chiqiladi;",
+  "doc-originality": "• tahrirdan oʻtmagan, originalligi 70 foizdan kam bo’lgan va talablar boʻyicha taqdim etilmagan maqolalar nashr etilmaydi;",
+  "doc-elect": "• maqolalar elektron shaklda qabul qilinadi;",
+  "doc-date": "• Maqolalarni qabul qilish muddati: oyning 25-kuniga qadar.",
+  "doc-off": "• jurnalning rasmiy tili: oʻzbek, rus, ingliz;",
+  "doc-publish": "• jurnalning nashr etilish sanasi: oyning 30-kuni;",
+  "doc-variant": "• muallifga maqolaning indekslanganligini ko‘rsatuvchi PDF formatidagi versiyasi taqdim etiladi, shuningdek, guvohnoma va mualliflik guvohnomasi taqdim etiladi.",
+  "doc-delete": "• jurnallar toʻplamini oyning 30-kunida veb-saytda topish mumkin",
+  "doc-site": "• jurnalning rasmiy sayti:",
+  "doc-link": "iegs-scientificjournal.vercel.app",
+  "doc-send": "• jurnalning nashr qilingan qogʻoz varianti alohida buyurtma asosida maqola mualliflari va tahrir hay’ati a’zolariga pochta orqali tarqatiladi.",
+
+  "public-rules": "Nashr qilish shartlari",
+
+  "archived": "Nashrlar arxivi",
+  "num": "son",
+
+  "who": "Muassis:",
+  "location": " Buxoro Davlat Pedagogika Instituti",
+  "register": "Jurnal Oʻzbekiston Respublikasi Prezidenti Administratsiyasi huzuridagi Axborot va ommaviy kommunikatsiyalar agentligi tomonidan 2023-yil 08 avgust №-111889-sonli guvohnoma bilan roʻyxatga olingan. ",
+  "VAC": "Jurnal O‘zbekiston Respublikasi OAK Rayosatining 2024 yil 31 yanvardagi 350-son qaroriga asosan pеdagogika, san’atshunoslik, psixologiya, fanlari bo‘yicha   falsafa   doktori (PhD) va fan doktori (DSc) ilmiy darajasiga talabgorlarning dissertatsiya ishlari yuzasidan “Dissertatsiyalar asosiy ilmiy natijalarini chop etish tavsiya etilgan ilmiy nashrlar ro‘yxati” ga kiritilgan",
+  "created": "Jurnal 2023 yilda tashkil etilgan va 2 oyida bir marta nashr etiladi. O‘zbek, rus va ingliz tillarida",
+  "license": "Litsenziya",
+
+  "news": "Yangiliklar",
+
+  "partners": "Hamkorlar",
+  "AR": "Kitobdagi 3D ob'ektlarni virtual haqiqat (VR) texnologiyasi asosida ko'rsatish imkoniyatini yaratuvchi mobil dastur.",
+  "3D": "Tasviy geometriyasi haqida ta'limiy 3D videolar",
+  "about-main": "Jurnal",
+  "connect": "Bog'lanish",
+  "manzil": "Manzil:",
+  "loc-target": "200100, Oʻzbekiston Respublikasi, Buxoro shahri Yangi yo'l  ko‘chasi, 51-uy,",
+  "email": "E-mail:",
+  "email-target": "nodirbekyadgarov@gmail.com",
+  "email-second": "pedagogicalperspective2023@gmail.com",
+  "phone": "Tel",
+  "phone-target": "+998(97) 300-34-00",
+
+  "issue": "qism",
+
+  "address-footer": "Nashriyot: MCHJ «Buxoro determinanti» Manzil: 200100, Buxoro, Namozgox 24",
+  "institute-address": "Bukhara city, Piridastgir street, 2nd house",
+  "footer-phone": "0 (365) 226-10-97",
+  "footer-inst": "BuxDPI"
+}

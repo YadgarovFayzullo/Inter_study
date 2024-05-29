@@ -1,13 +1,15 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Colleagues from "../components/Colleagues";
-import Counter from "../components/Counter";
+// import { useTranslation } from "react-i18next";
 
-export default function Home() {
+const Redaction = () => {
+  //   const { t } = useTranslation();
   return (
     <Layout>
       <Colleagues />
-      <Counter/>
     </Layout>
   );
-}
+};
+
+export default Redaction;

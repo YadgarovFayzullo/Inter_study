@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <header className="backdrop-blur-md bg-white/10 fixed w-full z-20 top-0 start-0">
+    <header className="backdrop-blur-md bg-blue-600 fixed w-full z-20 top-0 start-0">
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between border-b-2 border-gray-100">
         <Link
           to={"/"}
@@ -28,13 +28,13 @@ const RegularMenu = () => {
   return (
     <>
       <Link
-        to={""}
+        to={"/"}
         className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 "
       >
         Главная
       </Link>
       <Link
-        to={""}
+        to={"/redaction"}
         className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 "
       >
         Редакционная коллегия
@@ -82,7 +82,7 @@ const FlyoutMenu = () => {
           >
             <div className="py-1">
               <FlyoutMenuItem to={"/"}>Главная</FlyoutMenuItem>
-              <FlyoutMenuItem to={"/colleagues"}>
+              <FlyoutMenuItem to={"/redaction"}>
                 Редакционная коллегия
               </FlyoutMenuItem>
               <FlyoutMenuItem to={"rules"}>Условия</FlyoutMenuItem>
