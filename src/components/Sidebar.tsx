@@ -3,6 +3,7 @@ import { LuNewspaper } from "react-icons/lu";
 import { IoArchiveOutline } from "react-icons/io5";
 import { FiBook } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { IoIosStats } from "react-icons/io";
 
 const App = () => {
   const [open, setOpen] = useState(true);
@@ -11,6 +12,12 @@ const App = () => {
     { title: "Новости", icon: <LuNewspaper />, path: "/adminNews" },
     { title: "Архив", icon: <IoArchiveOutline />, path: "/adminArchive" },
     { title: "Обложка", icon: <FiBook />, gap: true, path: "/adminBook" },
+    {
+      title: "Статистика",
+      icon: <IoIosStats />,
+      gap: true,
+      path: "/adminStatistics",
+    },
   ];
 
   return (
