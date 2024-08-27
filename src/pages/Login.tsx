@@ -6,7 +6,7 @@ import { LOGIN } from "../utils/urls";
 export default function Login() {
   const [name, setName] = useState<string>("");
   const [password, setPassword] = useState<string>("");
-  const [showPassword, setShowPassword] = useState<boolean>(false);
+  // const [showPassword, setShowPassword] = useState<boolean>(false);
   const [userPasswordError, setUserPasswordError] = useState<string>("");
   const navigate = useNavigate();
 
@@ -53,9 +53,9 @@ export default function Login() {
     }
   };
 
-  const togglePassword = () => {
-    setShowPassword(!showPassword);
-  };
+  // const togglePassword = () => {
+  //   setShowPassword(!showPassword);
+  // };
 
   return (
     <div className="flex flex-col items-center justify-center pt-24 md:min-h-screen py-2 font-Montserrat">
@@ -84,7 +84,7 @@ export default function Login() {
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline focus:bg-sky-100 focus:border-blue-700"
                 id="password"
-                type={showPassword ? "text" : "password"}
+                type={"password"}
                 name="password"
                 placeholder="Введите пароль"
                 value={password}
