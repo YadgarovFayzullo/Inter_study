@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { useTranslation } from "react-i18next";
 interface CountData {
   label: string;
   count: number;
@@ -7,11 +7,16 @@ interface CountData {
 }
 
 const Counter: React.FC = () => {
+  const { t } = useTranslation();
+
   const [counts, setCounts] = useState<CountData[]>([
-    { label: "Общее число просмотров", count: 0, suffix: "+" },
-    { label: "Скачивания", count: 0, suffix: "+" },
-    { label: "Партнеры", count: 0, suffix: "+" },
+    { label: t("views"), count: 0, suffix: "+" },
+    { label: t("downloads"), count: 0, suffix: "+" },
+    { label: t("partners"), count: 0, suffix: "+" },
   ]);
+  console.log(t("views"));
+  console.log(t("downloads"));
+  console.log(t("partners"));
 
   useEffect(() => {
     const targets = [
@@ -41,19 +46,19 @@ const Counter: React.FC = () => {
   }, []);
 
   return (
-    <div className="h-screen">
-      <div className="pt-12 bg-gray-50 sm:pt-20">
+    <div>
+      <div className="pt-12 sm:pt-20">
         <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-extrabold leading-9 text-gray-900 sm:text-4xl sm:leading-10">
-            Статистика нашего журнала
+              {t("journal-statistics")}
             </h2>
             <p className="mt-3 text-xl leading-7 text-gray-600 -400 sm:mt-4">
-             Наш журнал является самым быстрорастущим и развивающимся в научно-исследоветельской сфере. 
+              {t("journal-followers")}
             </p>
           </div>
         </div>
-        <div className="pb-12 mt-10 bg-gray-50 sm:pb-16">
+        <div className="pb-12 mt-10 sm:pb-16">
           <div className="relative">
             <div className="relative max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
               <div className="max-w-4xl mx-auto">
@@ -68,7 +73,7 @@ const Counter: React.FC = () => {
                       <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500 ">
                         {count.label}
                       </dt>
-                      <dd className="order-1 text-5xl font-extrabold leading-none text-[#f0582f]">
+                      <dd className="order-1 text-5xl font-extrabold leading-none text-blue-700">
                         {count.count}
                         {count.suffix}
                       </dd>

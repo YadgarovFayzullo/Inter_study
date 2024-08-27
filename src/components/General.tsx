@@ -1,22 +1,21 @@
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-
-export default function General() {
+import { useTranslation } from "react-i18next";export default function General() {
   const location = useLocation();
   const [currentRoute, setCurrentRoute] = useState("");
+  const { t } = useTranslation();
 
- 
   useEffect(() => {
     if (location.pathname === "/") {
-      setCurrentRoute("Главная");
+      setCurrentRoute(t("main"));
     } else if (location.pathname === "/redaction") {
-      setCurrentRoute("Редакционная коллегия");
+      setCurrentRoute(t("redaction"));
     } else if (location.pathname === "/rules") {
-      setCurrentRoute("Условия");
+      setCurrentRoute(t("conditions"));
     } else if (location.pathname === "/archive") {
-      setCurrentRoute("Архив");
+      setCurrentRoute(t("archive"));
     } else if (location.pathname === "/about") {
-      setCurrentRoute("О нас");
+      setCurrentRoute(t("archive"));
     }
   }, [location.pathname]);
   return (

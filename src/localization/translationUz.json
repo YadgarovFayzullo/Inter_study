@@ -4,6 +4,7 @@
   "conditions": "Shartlar",
   "archive": "Arxiv",
   "about": "Biz haqimizda",
+  "menu": "Menyu",
 
   "blog": "Blog",
   "price": "To'lov shartlari",
@@ -22,7 +23,7 @@
   "masul-name": "Mamurova Dilfuza Islomovna, pedagogika fanlari bo‘yicha falsafa doktori (PhD), dotsent.",
   "masul-ped": "Buxoro davlat pedagogika instituti.",
 
-  "info-journal": "JURNALNING AXBOROT XATI",
+  "info-journal": "Jurnalnging axborot xati",
   "journal-text": "Jurnalga quyidagi yoʻnalishlar boʻyicha maqolalar qabul qiladi: Pedagogika, psixolgiya, san’atshunoslik fanlari bo‘yicha falsafa doktori (PhD) va fan doktori (DSc) ilmiy darajasiga talabgorlarning dissertatsiya ishlari yuzasidan asosiy ilmiy natijalarni o‘z ichiga oladi. Ilmiy jamoatchilikni ilm-fan natijalari bilan tanishtirish; ilm-fan rivojlantirishning dolzarb masalalariga tadqiqotlarining ustuvor yo‘nalishlari doirasida olib borilgan ilmiy ishlarning asosiy natijalari to‘g‘risida yosh olimlarning tadqiqotlari va ularning ilmiy ish natijalari to‘g‘risida ma’lumot berish; yangi istiqbolli loyihalar va texnologiyalarni joriy etish; ta’lim va tarbiya bilan bog‘liq barcha fanlar bo‘yicha nazariy va amaliy ishlar, fan va ta’limning innovatsion rivojlanishini, fundamental va amaliy tadqiqotlarni qo‘llab-quvvatlash uchun qulay axborot muhitini yaratish. Shuningdek zamonaviy ta’lim muammo va poradigmalarini o‘rganish, rivojlantirish va amaliyotga tadbiq etish bo‘yicha nazariy tavsiyalar berishdan iborat. Nashr qilingan materiallar mualliflari O‘zbekiston Respublikasi hamda yaqin va uzoq xorijning yetakchi olimlari, tadqiqotchi izlanuvchilar.",
 
   "rules-doc": "Taqdim etiladigan maqolalarga qoʻyiladigan talablar:",
@@ -40,7 +41,7 @@
   "doc-variant": "• muallifga maqolaning indekslanganligini ko‘rsatuvchi PDF formatidagi versiyasi taqdim etiladi, shuningdek, guvohnoma va mualliflik guvohnomasi taqdim etiladi.",
   "doc-delete": "• jurnallar toʻplamini oyning 30-kunida veb-saytda topish mumkin",
   "doc-site": "• jurnalning rasmiy sayti:",
-  "doc-link": "iegs-scientificjournal.vercel.app",
+  "doc-link": "interstudy.com.uz",
   "doc-send": "• jurnalning nashr qilingan qogʻoz varianti alohida buyurtma asosida maqola mualliflari va tahrir hay’ati a’zolariga pochta orqali tarqatiladi.",
 
   "public-rules": "Nashr qilish shartlari",
@@ -56,6 +57,11 @@
   "license": "Litsenziya",
 
   "news": "Yangiliklar",
+
+  "journal-statistics": "Bizning jurnalimiz statistikasi",
+  "journal-followers": "Bizning jurnalimiz ilmiy tadqiqot sohasida eng tez rivojlanayotgan va rivojlanayotgan jurnal hisoblanadi.",
+  "views": "Umumiy koʻrishlar soni",
+  "downloads": "Yuklashlar",
 
   "partners": "Hamkorlar",
   "AR": "Kitobdagi 3D ob'ektlarni virtual haqiqat (VR) texnologiyasi asosida ko'rsatish imkoniyatini yaratuvchi mobil dastur.",

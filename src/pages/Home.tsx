@@ -1,13 +1,14 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Colleagues from "../components/Colleagues";
 import Counter from "../components/Counter";
-
+import Book from "../components/Book";
+import News from "../components/News";
 export default function Home() {
   return (
     <Layout>
-      <Colleagues />
-      <Counter/>
+      <Book />
+      <Counter />
+      <News />
     </Layout>
   );
 }

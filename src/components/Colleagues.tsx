@@ -1,61 +1,32 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 
-export default function Colleagues() {
+const Colleagues = () => {
+  const { t } = useTranslation();
   return (
-    <div className="flex justify-center mr-2 ml-3 font-Montserrat">
-      <div className="mt-24 pl-1 lg:ml-2">
+    <div className="flex justify-center mr-2 ml-3 font-Montserrat text-justify">
+      <div className="mt-10 px-2">
         <h1>
-          <span className="font-medium">lorem50</span>Lorem ipsum, dolor sit
-          amet consectetur adipisicing elit. Veritatis fugit accusamus, enim
-          molestias dolorem eius quam, vel doloremque at voluptatibus inventore
-          deleniti qui ea tempore officia repudiandae quasi debitis voluptatem
-          cum illo hic maiores, suscipit quidem ut. Maxime temporibus quisquam
-          suscipit iure, amet laborum, voluptatem nisi et non autem ad.
+          <span className="font-medium">{t("main-red")}</span> {t("name-red")}
           <br />
-          <span className="font-medium">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-            doloribus ipsam exercitationem, ad ex fugiat ipsa. Consequuntur a
-            aperiam molestias ducimus voluptatem cupiditate sunt velit, dolorum
-            dolor rem odio libero doloremque totam est culpa quasi aut delectus
-            ratione voluptate iusto inventore tempora. Necessitatibus quod
-            cumque, officiis veritatis facere blanditiis similique.
-          </span>
-          Text
+          <span className="font-medium">{t("main-preds")}</span>
+          {t("name-preds")}
         </h1>
         <div className="flex justify-center pt-5 pb-5">
           <div className="font-medium text-lg text-center lg:text-xl">
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-            doloribus ipsam exercitationem, ad ex fugiat ipsa. Consequuntur a
-            similique.
+            {t("tahrir-hayati")}
           </div>
         </div>
-        <div>
-          {" "}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-          doloribus ipsam exercitationem, ad ex fugiat ipsa. Consequuntur a
-          aperiam molestias ducimus voluptatem cupiditate sunt velit, dolorum
-          dolor rem odio libero doloremque totam est culpa quasi aut delectus
-          ratione voluptate iusto inventore tempora. Necessitatibus quod cumque,
-          officiis veritatis facere blanditiis similique.
-        </div>
+
+        <div>{t("tahrir-secondnames")}</div>
         <p className="mb-6 md:mt-[20px]">
-          <span className="font-medium">Text</span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-          doloribus ipsam exercitationem, ad ex fugiat ipsa. Consequuntur a
-          aperiam molestias ducimus voluptatem cupiditate sunt velit, dolorum
-          dolor rem odio libero doloremque totam est culpa quasi aut delectus
-          ratione voluptate iusto inventore tempora. Necessitatibus quod cumque,
-          officiis veritatis facere blanditiis similique.
+          <span className="font-medium">{t("masul-kotib")} </span>
+          {t("masul-name")}
           <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-          doloribus ipsam exercitationem, ad ex fugiat ipsa. Consequuntur a
-          aperiam molestias ducimus voluptatem cupiditate sunt velit, dolorum
-          dolor rem odio libero doloremque totam est culpa quasi aut delectus
-          ratione voluptate iusto inventore tempora. Necessitatibus quod cumque,
-          officiis veritatis facere blanditiis similique.
+          {t("masul-ped")}
         </p>
       </div>
     </div>
   );
-}
+};
+
+export default Colleagues;

@@ -1,11 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    screens: {
+      sm: "640px",
+      md: "769px",
+      lg: "1024px",
+      xl: "1280px",
+    },
+    fontFamily: {
+      Header: ["Oswald", "sans-serif"],
+      Arimo: ["Arimo", "serif"],
+      Sans: ["Noto Sans", "sans-serif"],
+      Roboto: ["Roboto Slab", "serif"],
+      Montserrat: ["Montserrat", "sans-serif"],
+    },
+    extend: {
+      colors: {
+        "light-white": "#f5f5f5",
+        "light-white": "rgba(255,255,255,0.17)",
+      },
+    },
   },
   plugins: [],
-}
+};

@@ -3,7 +3,22 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
 .rounded-elem {
   border-bottom-left-radius: 400px;
   border-bottom-right-radius: 400px;
+}
+
+flex {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+}
+
+.flex-1 {
+  flex: 1; /* Make the main content take up remaining space */
 }

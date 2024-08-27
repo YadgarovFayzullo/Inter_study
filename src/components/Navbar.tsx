@@ -1,75 +1,111 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import i18n from "../localization/i18n";
 
-const Navbar = () => {
+interface NavbarProps {
+  changeLang: (newLang: string) => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ changeLang }) => {
+  const { t } = useTranslation();
+
   return (
     <header className="backdrop-blur-md bg-blue-600 fixed w-full z-20 top-0 start-0">
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between border-b-2 border-gray-100">
         <Link
           to={"/"}
-          className=" md:flex md:text-xl md:justify-center md:font-semibold text-white md:rounded md:py-1 md:px-2 hidden sm:block" 
+          className="md:flex md:text-xl md:justify-center md:font-semibold text-white md:rounded md:py-1 md:px-2 hidden sm:block"
           style={{ fontFamily: "Dancing Script, cursive" }}
         >
-          Inter Study
+          InterStudy
         </Link>
         <div className="sm:hidden">
-          <FlyoutMenu />
+          <FlyoutMenu changeLang={changeLang} />
         </div>
         <div className="hidden sm:flex sm:flex-row sm:justify-start">
-          <RegularMenu />
+          <RegularMenu changeLang={changeLang} />
         </div>
       </nav>
     </header>
   );
 };
 
-const RegularMenu = () => {
+const RegularMenu: React.FC<{ changeLang: (newLang: string) => void }> = ({
+  changeLang,
+}) => {
+  const { t } = useTranslation();
+
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const newLang = e.target.value;
+    changeLang(newLang);
+  };
+
   return (
     <>
       <Link
         to={"/"}
-        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 "
+        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10"
       >
-        Главная
+        {t("main")}
       </Link>
       <Link
         to={"/redaction"}
-        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 "
+        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10"
       >
-        Редакционная коллегия
+        {t("redaction")}
       </Link>
       <Link
-        to={""}
-        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 "
+        to={"/rules"}
+        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10"
       >
-        Условия
+        {t("conditions")}
       </Link>
       <Link
-        to={""}
-        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 "
+        to={"/archive"}
+        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10"
       >
-        Архив
+        {t("archive")}
       </Link>
       <Link
-        to={""}
-        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 "
+        to={"/about"}
+        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10"
       >
-        О нас
+        {t("about")}
+      </Link>
+      <select
+        id="languages"
+        className="bg-blue-600 mt-2 md:mt-0 text-white text-sm rounded-lg focus:ring-[#f0582f] focus:border-blue-500 p-2 lg:ml-3 font-Montserrat -ml-3"
+        onChange={handleLanguageChange}
+        value={i18n.language}
+      >
+        <option value="ru">Русский</option>
+        <option value="uz">O'zbek</option>
+      </select>
+      <Link
+        to={"/login"}
+        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10"
+      >
+        {t("login")}
       </Link>
     </>
   );
 };
 
-const FlyoutMenu = () => {
-  const [open, setOpen] = useState(false);
+const FlyoutMenu: React.FC<{ changeLang: (newLang: string) => void }> = ({
+  changeLang,
+}) => {
+  const [open, setOpen] = useState<boolean>(false);
+  const { t } = useTranslation();
+
   return (
-    <div className="relative f">
+    <div className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className=" py-2 px-2 mt-1 mb-1 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white bg-blue-100/10"
+        className="py-2 px-2 mt-1 mb-1 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white bg-blue-100/10"
       >
-        Меню
+        {t("menu")}
       </button>
       <AnimatePresence>
         {open && (
@@ -81,13 +117,13 @@ const FlyoutMenu = () => {
             className="absolute left-0 mt-2 w-full bg-white shadow-md rounded-md z-10"
           >
             <div className="py-1">
-              <FlyoutMenuItem to={"/"}>Главная</FlyoutMenuItem>
+              <FlyoutMenuItem to={"/"}>{t("main")}</FlyoutMenuItem>
               <FlyoutMenuItem to={"/redaction"}>
-                Редакционная коллегия
+                {t("redaction")}
               </FlyoutMenuItem>
-              <FlyoutMenuItem to={"rules"}>Условия</FlyoutMenuItem>
-              <FlyoutMenuItem to={"archive"}>Архив</FlyoutMenuItem>
-              <FlyoutMenuItem to={"about"}>О нас</FlyoutMenuItem>
+              <FlyoutMenuItem to={"/archive"}>{t("archive")}</FlyoutMenuItem>
+              <FlyoutMenuItem to={"/about"}>{t("about")}</FlyoutMenuItem>
+              <FlyoutMenuItem to={"/login"}>{t("login")}</FlyoutMenuItem>
             </div>
           </motion.div>
         )}
@@ -96,12 +132,9 @@ const FlyoutMenu = () => {
   );
 };
 
-const FlyoutMenuItem = ({
+const FlyoutMenuItem: React.FC<{ to: string; children: React.ReactNode }> = ({
   to,
   children,
-}: {
-  to: string;
-  children: React.ReactNode;
 }) => {
   return (
     <Link
@@ -112,4 +145,5 @@ const FlyoutMenuItem = ({
     </Link>
   );
 };
+
 export default Navbar;
