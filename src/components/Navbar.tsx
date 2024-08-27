@@ -9,8 +9,6 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ changeLang }) => {
-  const { t } = useTranslation();
-
   return (
     <header className="backdrop-blur-md bg-blue-600 fixed w-full z-20 top-0 start-0">
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between border-b-2 border-gray-100">
@@ -93,9 +91,7 @@ const RegularMenu: React.FC<{ changeLang: (newLang: string) => void }> = ({
   );
 };
 
-const FlyoutMenu: React.FC<{ changeLang: (newLang: string) => void }> = ({
-  changeLang,
-}) => {
+const FlyoutMenu: React.FC<{ changeLang: (newLang: string) => void }> = () => {
   const [open, setOpen] = useState<boolean>(false);
   const { t } = useTranslation();
 
