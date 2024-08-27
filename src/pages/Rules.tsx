@@ -1,4 +1,3 @@
-import React from "react";
 import RulesPublication from "../components/PublicationRules";
 import Layout from "../components/Layout";
 
