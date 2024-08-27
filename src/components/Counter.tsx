@@ -14,9 +14,6 @@ const Counter: React.FC = () => {
     { label: t("downloads"), count: 0, suffix: "+" },
     { label: t("partners"), count: 0, suffix: "+" },
   ]);
-  console.log(t("views"));
-  console.log(t("downloads"));
-  console.log(t("partners"));
 
   useEffect(() => {
     const targets = [
