@@ -197,8 +197,8 @@ export default function AdminArchive() {
                 className="w-32 border rounded-md px-3 py-2 focus:outline-none focus:border-blue-500"
               >
                 <option value="">Год</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
+                {/* <option value="2023">2023</option>
+                <option value="2024">2024</option> */}
                 <option value="2024">2025</option>
               </select>
               {yearError && <p className="text-red-500">{yearError}</p>}
