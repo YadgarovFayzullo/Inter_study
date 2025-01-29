@@ -11,7 +11,7 @@ import Protected from "./utils/Protected";
 import Partnership from "./components/Partners";
 import AboutUs from "./pages/AboutUs";
 import Login from "./pages/Login";
-import AdminAnalytics from "./pages/AdminAnalytics"
+// import AdminAnalytics from "./pages/AdminAnalytics"
 
 const App = () => {
   return (
@@ -24,7 +24,7 @@ const App = () => {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/archive" element={<Archive />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/adminAnalytics" element={<AdminAnalytics/>} />
+        {/* <Route path="/adminAnalytics" element={<AdminAnalytics/>} /> */}
 
         {/* Protected admin routes */}
         <Route path="/admin" element={<Protected element={<Admin />} />} />

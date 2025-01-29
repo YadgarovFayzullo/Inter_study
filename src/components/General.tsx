@@ -15,7 +15,7 @@ import { useTranslation } from "react-i18next";export default function General()
     } else if (location.pathname === "/archive") {
       setCurrentRoute(t("archive"));
     } else if (location.pathname === "/about") {
-      setCurrentRoute(t("archive"));
+      setCurrentRoute(t("about"));
     }
   }, [location.pathname]);
   return (

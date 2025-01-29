@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 const Colleagues = () => {
   const { t } = useTranslation();
   return (
-    <div className="flex justify-center mr-2 ml-3 font-Montserrat text-justify">
+    <div className="flex justify-center mr-1 ml-3 font-Montserrat text-justify">
       <div className="mt-10 px-2">
         <h1>
           <span className="font-medium">{t("main-red")}</span> {t("name-red")}

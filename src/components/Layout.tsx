@@ -17,14 +17,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   useEffect(() => {
     if (language) {
       localStorage.setItem("language", language);
-      i18n
-        .changeLanguage(language)
-        .then(() => {
-          console.log(`Language set to ${language}`);
-        })
-        .catch((err) => {
-          console.error(`Failed to change language: ${err}`);
-        });
+      i18n.changeLanguage(language);
     }
   }, [language]);
 

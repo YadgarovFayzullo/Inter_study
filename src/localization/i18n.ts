@@ -25,8 +25,8 @@ export const switchToRussian = () => {
 export const switchToUzbek = () => {
   i18n.changeLanguage("uz");
 };
-i18n.on("languageChanged", (lng) => {
-  console.log(`Language changed to ${lng}`);
-});
+// i18n.on("languageChanged", (lng) => {
+  // console.log(`Language changed to ${lng}`);
+// });
 
 export default i18n;

@@ -4,8 +4,8 @@ export default function RulesPublication() {
   const { t } = useTranslation();
   return (
     <div className="font-Montserrat text-justify px-3">
-      <div className="mt-16 mb-5 sm:mb-6">
-        <h1 className="mb-2 font-medium md:mb-2 flex justify-center text-lg font-medium ">
+      <div className="mt-10 mb-5 sm:mb-6">
+        <h1 className="mb-2 font-medium md:mb-2 flex justify-center text-lg">
           {t("info-journal")}
         </h1>
         <h1>{t("journal-text")}</h1>
@@ -28,9 +28,9 @@ export default function RulesPublication() {
             {t("doc-site")}
             <a
               className="font-medium ml-1 text-blue-600 hover:underline"
-              href="https://intereduglobalstudy.com"
+              href="https://interstudy.com.uz"
             >
-              intereduglobalstudy.com
+            interstudy.com.uz
             </a>
           </li>
           <li>{t("doc-variant")}</li>
@@ -38,9 +38,9 @@ export default function RulesPublication() {
             {t("doc-delete")}:
             <a
               className="font-medium md:ml-1 text-blue-600 hover:underline"
-              href="https://intereduglobalstudy.com"
+              href="https://interstudy.com.uz"
             >
-              intereduglobalstudy.com
+              interstudy.com.uz
             </a>
           </li>
           <li>{t("doc-send")}</li>

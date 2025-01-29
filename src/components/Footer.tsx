@@ -11,8 +11,11 @@ export default function Footer() {
                 Есть предложения? Пишите в нашу почту
               </h1>
               <div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
-                <a href="mailto:pedagogicalperspective2023@gmail.com" className="button">
-                  <button className="backdrop-blur-md w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none rounded-lg hover:bg-white/10 bg-gray-100/50 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+                <a
+                  href="mailto:pedagogicalperspective2023@gmail.com"
+                  className="button"
+                >
+                  <button className="backdrop-blur-md w-full px-10 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none rounded-lg hover:bg-white/10 bg-gray-100/50 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
                     Написать
                   </button>
                 </a>
@@ -50,11 +53,14 @@ export default function Footer() {
           <hr className="my-6 border-gray-200 md:my-8 h-2" />
           <div className="sm:flex sm:items-center sm:justify-between">
             <div className="flex gap-4 hover:cursor-pointer">
-            <FaTelegram size={30} className="text-white hover:text-blue-500 duration-300"/>
+              <FaTelegram
+                size={30}
+                className="text-white hover:text-blue-500 duration-300"
+              />
             </div>
           </div>
           <p className="text-white font-sans p-8 text-start md:text-center md:text-lg md:p-4">
-            © 2024 Inter Study. All rights reserved.
+            © 2025 Inter Study. All rights reserved.
           </p>
         </div>
       </footer>

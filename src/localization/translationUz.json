@@ -52,8 +52,7 @@
   "who": "Muassis:",
   "location": " Buxoro Davlat Pedagogika Instituti",
   "register": "Jurnal Oʻzbekiston Respublikasi Prezidenti Administratsiyasi huzuridagi Axborot va ommaviy kommunikatsiyalar agentligi tomonidan 2023-yil 08 avgust №-111889-sonli guvohnoma bilan roʻyxatga olingan. ",
-  "VAC": "Jurnal O‘zbekiston Respublikasi OAK Rayosatining 2024 yil 31 yanvardagi 350-son qaroriga asosan pеdagogika, san’atshunoslik, psixologiya, fanlari bo‘yicha   falsafa   doktori (PhD) va fan doktori (DSc) ilmiy darajasiga talabgorlarning dissertatsiya ishlari yuzasidan “Dissertatsiyalar asosiy ilmiy natijalarini chop etish tavsiya etilgan ilmiy nashrlar ro‘yxati” ga kiritilgan",
-  "created": "Jurnal 2023 yilda tashkil etilgan va 2 oyida bir marta nashr etiladi. O‘zbek, rus va ingliz tillarida",
+  "created": "Jurnal 2024 yilda tashkil etilgan va 1 oyida bir marta nashr etiladi. O‘zbek, rus va ingliz tillarida",
   "license": "Litsenziya",
 
   "news": "Yangiliklar",
@@ -81,5 +80,7 @@
   "address-footer": "Nashriyot: MCHJ «Buxoro determinanti» Manzil: 200100, Buxoro, Namozgox 24",
   "institute-address": "Bukhara city, Piridastgir street, 2nd house",
   "footer-phone": "0 (365) 226-10-97",
-  "footer-inst": "BuxDPI"
+  "footer-inst": "BuxDPI",
+
+  "login": "Login"
 }

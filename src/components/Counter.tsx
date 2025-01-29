@@ -17,9 +17,9 @@ const Counter: React.FC = () => {
 
   useEffect(() => {
     const targets = [
-      { index: 0, count: 5500, suffix: "+" },
-      { index: 1, count: 800, suffix: "+" },
-      { index: 2, count: 20, suffix: "+" },
+      { index: 0, count: 1000, suffix: "+" },
+      { index: 1, count: 200, suffix: "+" },
+      { index: 2, count: 10, suffix: "+" },
     ];
 
     const maxCount = Math.max(...targets.map((target) => target.count));

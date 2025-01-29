@@ -29,7 +29,7 @@ export default function News() {
     const fetchData = async () => {
       try {
         const response = await axios.get<NewsItem[]>(NEWS);
-        console.log("Fetched data:", response.data);
+        // console.log("Fetched data:", response.data);
 
         if (Array.isArray(response.data)) {
           setNewsState({
@@ -37,14 +37,14 @@ export default function News() {
             loading: false,
           });
         } else {
-          console.error("Fetched data is not an array:", response.data);
+          // console.error("Fetched data is not an array:", response.data);
           setNewsState({
             newsItems: [],
             loading: false,
           });
         }
       } catch (error) {
-        console.error("Error fetching news data:", error);
+        // console.error("Error fetching news data:", error);
         setNewsState({
           newsItems: [],
           loading: false,
