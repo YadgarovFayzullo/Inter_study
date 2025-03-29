@@ -22,30 +22,30 @@ export default function Footer() {
               </div>
             </div>
             <div>
-              <p className="font-semibold text-white">Quick Link</p>
+              <p className="font-semibold text-white">Редакция</p>
               <div className="flex flex-col items-start mt-5 space-y-2">
                 <p className="text-white transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">
-                  Home
+                  O‘zbekiston, Toshkent sh. 100000, Shaxrisabz ko’chasi, 3 uy.
                 </p>
                 <p className="text-white transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">
-                  Who We Are
+                mirshod_sattorov@mail.ru
                 </p>
                 <p className="text-white transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">
-                  Our Philosophy
+                  +998(90) 299-34-00
                 </p>
               </div>
             </div>
             <div>
-              <p className="font-semibold text-white">Industries</p>
+              <p className="font-semibold text-white">Реквезиты</p>
               <div className="flex flex-col items-start mt-5 space-y-2">
                 <p className="text-white transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">
-                  Retail & E-Commerce
+                  H/r: 20208000905500652001
                 </p>
                 <p className="text-white transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">
-                  Information Technology
+                  INN: 309343334
                 </p>
                 <p className="text-white transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">
-                  Finance & Insurance
+                Bank: "O'zsanoatqurilishbank" ATB ning Buxoro viloyati banki.
                 </p>
               </div>
             </div>
@@ -60,7 +60,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-white font-sans p-8 text-start md:text-center md:text-lg md:p-4">
-            © 2025 Inter Study. All rights reserved.
+            OOO “BUXORO DETERMINANTI” ©
           </p>
         </div>
       </footer>
