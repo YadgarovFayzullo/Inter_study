@@ -7,8 +7,11 @@ interface PdfFiles {
 
 const staticPdfFiles: PdfFiles = {
   "2024": [
-    "/files/archive?name=Issue-5.pdf",
-    "/files/archive?name=Issue-4.pdf",
+    "IS1.pdf",
+    "IS2.pdf",
+    "IS3.pdf",
+    "IS4.pdf",
+    "IS5.pdf",
   ]
 };
 

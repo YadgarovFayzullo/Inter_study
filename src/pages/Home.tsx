@@ -7,7 +7,7 @@ export default function Home() {
     <Layout>
       <Book />
       <Counter />
-      <News />
+      {/* <News /> */}
     </Layout>
   );
 }
