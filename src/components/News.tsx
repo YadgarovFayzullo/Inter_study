@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import axios from "axios";
-import { NEWS, ROUTE } from "../utils/urls";
 
 interface NewsItem {
   id: number;
@@ -11,49 +9,64 @@ interface NewsItem {
   subtitle: string;
 }
 
-interface NewsState {
-  newsItems: NewsItem[];
-  loading: boolean;
-}
+// Статичные данные новостей
+const staticNewsItems: NewsItem[] = [
+  {
+    id: 1,
+    link: "#",
+    image: "/images/news/enrollment-9.jpg",
+    title: "Начался набор на 9й выпуск!",
+    subtitle:
+      "Открыт прием заявок на участие в девятом выпуске нашей программы. Присоединяйтесь к нашему сообществу профессионалов!",
+  },
+  {
+    id: 2,
+    link: "#",
+    image: "/images/news/graduation-8.jpg",
+    title: "Выпуск 8-го потока студентов",
+    subtitle:
+      "Поздравляем выпускников восьмого потока с успешным завершением обучения. Желаем успехов в карьере!",
+  },
+  {
+    id: 3,
+    link: "#",
+    image: "/images/news/conference-2024.jpg",
+    title: "Ежегодная конференция 2024",
+    subtitle:
+      "Приглашаем всех желающих принять участие в нашей ежегодной конференции, где будут представлены новейшие технологии и тренды.",
+  },
+  {
+    id: 4,
+    link: "#",
+    image: "/images/news/partnership.jpg",
+    title: "Новое партнерство с ведущими компаниями",
+    subtitle:
+      "Мы рады объявить о заключении партнерских соглашений с крупнейшими IT-компаниями для обеспечения трудоустройства наших выпускников.",
+  },
+  {
+    id: 5,
+    link: "#",
+    image: "/images/news/scholarship.jpg",
+    title: "Программа стипендий для талантливых студентов",
+    subtitle:
+      "Запущена новая программа стипендий для поддержки одаренных студентов. Подача заявок открыта до конца месяца.",
+  },
+  {
+    id: 6,
+    link: "#",
+    image: "/images/news/online-courses.jpg",
+    title: "Запуск онлайн-курсов",
+    subtitle:
+      "Теперь наши курсы доступны в онлайн-формате! Обучайтесь из любой точки мира в удобное для вас время.",
+  },
+];
 
 export default function News() {
   const { t } = useTranslation();
   const [currentPage, setCurrentPage] = useState<number>(1);
   const itemsPerPage = 2;
-  const [newsState, setNewsState] = useState<NewsState>({
-    newsItems: [],
-    loading: true,
-  });
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get<NewsItem[]>(NEWS);
-        // console.log("Fetched data:", response.data);
-
-        if (Array.isArray(response.data)) {
-          setNewsState({
-            newsItems: response.data,
-            loading: false,
-          });
-        } else {
-          // console.error("Fetched data is not an array:", response.data);
-          setNewsState({
-            newsItems: [],
-            loading: false,
-          });
-        }
-      } catch (error) {
-        // console.error("Error fetching news data:", error);
-        setNewsState({
-          newsItems: [],
-          loading: false,
-        });
-      }
-    };
-
-    fetchData();
-  }, []);
+  const [newsItems] = useState<NewsItem[]>(staticNewsItems);
+  const [loading] = useState(false);
 
   const handleClick = (page: number) => {
     setCurrentPage(page);
@@ -61,14 +74,14 @@ export default function News() {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = newsState.newsItems.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = newsItems.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
     <section className="py-10 mb-5 flex flex-col justify-around font-Montserrat">
       <div className="text-center">
         <h1 className="text-5xl">{t("news")}</h1>
       </div>
-      {newsState.loading ? (
+      {loading ? (
         <div className="text-center">Loading...</div>
       ) : (
         <div className="flex justify-around">
@@ -83,7 +96,7 @@ export default function News() {
                   {item.image && (
                     <img
                       className="object-cover w-full rounded-t-lg h-full md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-                      src={`${ROUTE}${item.image}`}
+                      src={`{item.image}`}
                       alt={item.title}
                     />
                   )}
@@ -105,7 +118,7 @@ export default function News() {
       )}
       <div className="flex justify-center mt-5">
         {Array.from({
-          length: Math.ceil(newsState.newsItems.length / itemsPerPage),
+          length: Math.ceil(newsItems.length / itemsPerPage),
         }).map((_, index) => (
           <button
             key={index}

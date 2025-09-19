@@ -27,9 +27,11 @@ export default function Footer() {
                 <p className="text-white transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">
                   O‘zbekiston, Toshkent sh. 100000, Shaxrisabz ko’chasi, 3 uy.
                 </p>
+                <a href="https://t.me/interstudy_admin">
                 <p className="text-white transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">
-                mirshod_sattorov@mail.ru
+                  InterStudy Admin
                 </p>
+                </a>
                 <p className="text-white transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">
                   +998(90) 299-34-00
                 </p>
@@ -45,7 +47,7 @@ export default function Footer() {
                   INN: 309343334
                 </p>
                 <p className="text-white transition-colors duration-300 hover:underline hover:cursor-pointer hover:text-blue-500">
-                Bank: "O'zsanoatqurilishbank" ATB ning Buxoro viloyati banki.
+                  Bank: "O'zsanoatqurilishbank" ATB ning Buxoro viloyati banki.
                 </p>
               </div>
             </div>
